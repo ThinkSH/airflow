@@ -8,7 +8,7 @@ from airflow.sdk import DAG, task
 #from airflow.decorators import task
 
 with DAG(
-    dag_id="dags_python_task_operator",
+    dag_id="dags_python_task_decorator",
     schedule="0 2 * * 1",  #매주 월요일 2시 0분 
     start_date=pendulum.datetime(2023, 3, 1, tz="Asia/Seoul"),
     catchup=False,
